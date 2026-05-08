@@ -1,11 +1,11 @@
-const login = document.querySelector("#login");
+const form = document.querySelector("#form");
 
-login.addEventListener("click", () => {
+form.addEventListener("submit", (e) => {
   const user = document.querySelector("#username").value;
   if (user !== "") {
     document.cookie = `username=${user}`;
     document.location.href = "/";
-  }else {
+  } else {
     alert("Please enter a username");
   }
 });

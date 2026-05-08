@@ -4,15 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/chat.css" />
     <title>ESPE-Chat</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to ESPE-Chat</h1>
+      <h1>ESPE-Chat</h1>
     </header>
-    <main>
-      <p>This is a simple chat application built with Node.js and Socket.io.</p>
-    </main>
+    <div class="chat-container">
+      <main>
+        <div id="all-messages">
+          <div class="message incoming">
+            <div class="image-container">
+              <img src="/img/profile.jpg" alt="User Avatar" />
+            </div>
+            <div class="message-content">
+              <div class="user-info">
+                <span class="username">Daniel</span>
+                <span class="time">10:30 AM</span>
+              </div>
+              <p>Hola! Como estas?</p>
+            </div>
+          </div>
+
+          <div class="message outgoing">
+            <div class="image-container">
+              <img src="/img/profile.jpg" alt="User Avatar" />
+            </div>
+            <div class="message-content">
+              <div class="user-info">
+                <span class="username">Tu</span>
+                <span class="time">10:32 AM</span>
+              </div>
+              <p>Bien merci! Y tu?</p>
+            </div>
+          </div>
+
+          <div class="message incoming">
+            <div class="image-container">
+              <img src="/img/profile.jpg" alt="User Avatar" />
+            </div>
+            <div class="message-content">
+              <div class="user-info">
+                <span class="username">Maria</span>
+                <span class="time">10:35 AM</span>
+              </div>
+              <p>Hola a todos! Bienvenido al chat!</p>
+            </div>
+          </div>
+
+          <div class="message incoming">
+            <div class="image-container">
+              <img src="/img/profile.jpg" alt="User Avatar" />
+            </div>
+            <div class="message-content">
+              <div class="user-info">
+                <span class="username">Carlos</span>
+                <span class="time">10:40 AM</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam provident iure dolores voluptatum magnam rem.</p>
+            </div>
+          </div>
+        </div>
+        <div class="send-message">
+          <input type="text" id="message" placeholder="Escribe un mensaje..." />
+          <button id="send-message" class="btn primary"></button>
+        </div>
+      </main>
+    </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/script.js"></script>
   </body>
