@@ -46,12 +46,9 @@ main {
   align-items: flex-start;
 }
 
-.message.incoming {
-  justify-content: flex-start;
-}
-
+.message.incoming,
 .message.outgoing {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .message .image-container {
@@ -82,7 +79,7 @@ main {
 
 .message.outgoing .message-content {
   background-color: #006633;
-  border-radius: 18px 0 18px 18px;
+  border-radius: 0 18px 18px 18px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
