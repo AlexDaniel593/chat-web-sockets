@@ -10,19 +10,33 @@ html, body {
 
 body {
   font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-  background-color: #e5ddd5;
+  background-color: #F8FAFC;
   display: flex;
   flex-direction: column;
 }
 
 header {
-  background: #006633;
+  background: #2563EB;
   color: #ffffff;
   padding: 12px 20px;
   text-align: center;
   font-weight: bold;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   z-index: 100;
+}
+
+.chat-container {
+  max-height: 850px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #cbcccf;
 }
 
 main {
@@ -36,8 +50,8 @@ main {
   flex: 1;
   overflow-y: auto;
   padding: 20px;
-  background-color: #e5ddd5;
-  background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M20 20.5V28M20 20.5C18.5 20.5 17.5 19.5 17.5 18V12C17.5 10.5 18.5 9.5 20 9.5C21.5 9.5 22.5 10.5 22.5 12V18C22.5 19.5 21.5 20.5 20 20.5Z" fill="%23d0d5cd" fill-opacity="0.4"/%3E%3C/svg%3E');
+  background-color: #cbcccf;
+  background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M20 20.5V28M20 20.5C18.5 20.5 17.5 19.5 17.5 18V12C17.5 10.5 18.5 9.5 20 9.5C21.5 9.5 22.5 10.5 22.5 12V18C22.5 19.5 21.5 20.5 20 20.5Z" fill="%2364748B" fill-opacity="0.1"/%3E%3C/svg%3E');
 }
 
 .message {
@@ -62,7 +76,7 @@ main {
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #006633;
+  border: 2px solid #2563EB;
 }
 
 .message .message-content {
@@ -74,13 +88,13 @@ main {
 .message.incoming .message-content {
   background-color: #ffffff;
   border-radius: 0 18px 18px 18px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px rgba(64,116,139,0.1);
 }
 
 .message.outgoing .message-content {
-  background-color: #006633;
+  background-color: #2563EB;
   border-radius: 0 18px 18px 18px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px rgba(64,116,139,0.1);
 }
 
 .message .message-content .user-info {
@@ -94,12 +108,12 @@ main {
 
 .message .message-content .user-info .username {
   font-weight: bold;
-  color: #006633;
+  color: #2563EB;
   font-size: 13px;
 }
 
 .message.outgoing .message-content .user-info .username {
-  color: #ffd700;
+  color: #E0E7FF;
 }
 
 .message .message-content .user-info .time {
@@ -124,20 +138,19 @@ main {
 }
 
 .send-message {
-  background: #006633;
+  background: #E0E7FF;
+  border-top: 1px solid #2563EB;
   padding: 10px 15px;
   display: flex;
   align-items: center;
   gap: 10px;
-  bottom: 0;
-  position: absolute;
   width: 100%;
 }
 
 .send-message input {
   flex: 1;
   padding: 12px 15px;
-  border: none;
+  border: 1px solid #2563EB;
   border-radius: 25px;
   outline: none;
   font-size: 14px;
@@ -145,8 +158,8 @@ main {
 }
 
 .send-message button {
-  background-color: #ffd700;
-  color: #000000;
+  background-color: #2563EB;
+  color: #ffffff;
   font-weight: bold;
   border: none;
   border-radius: 50%;
@@ -160,7 +173,7 @@ main {
 }
 
 .send-message button:hover {
-  background-color: #006633;
+  background-color: #1D4ED8;
   color: #ffffff;
   transform: scale(1.1);
 }

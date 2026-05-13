@@ -2,22 +2,47 @@ main {
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  background-color: #ffffff; /* Fondo blanco institucional */
+  background-color: #F8FAFC;
 }
 
 main form {
   width: 50%;
   padding: 20px;
-  border: 2px solid #006633; /* Borde verde institucional */
+  border: 2px solid #E0E7FF;
   border-radius: 8px;
-  background-color: #f9f9f9; /* Suave contraste */
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 main form .input-group label {
   text-align: center;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #006633; /* Verde institucional */
+  color: #64748B;
+}
+
+.avatar-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-block: 15px;
+}
+.avatar-option {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+  background-color: #E0E7FF;
+}
+.avatar-option:hover {
+  transform: scale(1.1);
+}
+.avatar-option.selected {
+  border-color: #2563EB;
+  transform: scale(1.15);
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
 }
 
 main form .button-container {
@@ -26,8 +51,8 @@ main form .button-container {
 }
 
 main form .button-container button {
-  background-color: #006633; /* Verde institucional */
-  color: #ffffff; /* Texto blanco */
+  background-color: #2563EB;
+  color: #ffffff;
   font-weight: bold;
   padding: 10px 20px;
   border: none;
@@ -37,6 +62,6 @@ main form .button-container button {
 }
 
 main form .button-container button:hover {
-  background-color: #ffd700; /* Amarillo institucional al hover */
-  color: #000000; /* Texto negro para contraste */
+  background-color: #1D4ED8;
+  color: #ffffff;
 }

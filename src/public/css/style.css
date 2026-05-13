@@ -6,12 +6,12 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff; /* Fondo blanco institucional */
+  background-color: #F8FAFC;
 }
 
 header {
-  background: #006633; /* Verde institucional */
-  color: #ffffff; /* Texto blanco */
+  background: #2563EB;
+  color: #ffffff;
   padding: 7px;
   text-align: center;
   font-weight: bold;
@@ -65,19 +65,19 @@ button:not(:disabled) {
 
 .primary {
   --btn-color: #ffffff;
-  --btn-bg: #006633; /* Verde institucional */
-  --btn-border-color: #006633;
-  --btn-hover-color: #000000;
-  --btn-hover-bg: #ffd700; /* Amarillo institucional */
-  --btn-hover-border-color: #ffd700;
-  --btn-focus-shadow-rgb: 0, 102, 51; /* Verde institucional en sombra */
+  --btn-bg: #2563EB;
+  --btn-border-color: #2563EB;
+  --btn-hover-color: #ffffff;
+  --btn-hover-bg: #1D4ED8;
+  --btn-hover-border-color: #1D4ED8;
+  --btn-focus-shadow-rgb: 37, 99, 235;
   --btn-active-color: #ffffff;
-  --btn-active-bg: #004422; /* Verde más oscuro para activo */
-  --btn-active-border-color: #004422;
+  --btn-active-bg: #1E40AF;
+  --btn-active-border-color: #1E40AF;
   --btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --btn-disabled-color: #ffffff;
-  --btn-disabled-bg: #cccccc; /* Gris para deshabilitado */
-  --btn-disabled-border-color: #cccccc;
+  --btn-disabled-bg: #64748B;
+  --btn-disabled-border-color: #64748B;
 }
 
 .input-group {
@@ -86,7 +86,7 @@ button:not(:disabled) {
 }
 
 .input-group input {
-  border: 1px solid #006633; /* Verde institucional */
+  border: 1px solid #2563EB;
   outline: none;
   padding: 10px;
   border-radius: 3px;
@@ -97,6 +97,6 @@ button:not(:disabled) {
     0 0 4px 0 rgb(0 0 0 / 8%),
     0 2px 4px 0 rgb(0 0 0 / 12%);
   border-radius: 3px;
-  background: #ffffff; /* Fondo blanco institucional */
-  border: 1px solid #006633; /* Borde verde institucional */
+  background: #ffffff;
+  border: 1px solid #E0E7FF;
 }
